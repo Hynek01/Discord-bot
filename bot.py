@@ -1,9 +1,10 @@
 import discord
+from discord.ext import commands
 import responses
 import datetime
 import subprocess
 
-TOKEN = "MTE1MjAyODA4MTMzNTMwODI5OQ.GUebT7.97XRnPuOOUM0PudHQdwF8xbe_CTJUpolw3bRoo"
+TOKEN = ""  # Insert token here, I removed mine :)
 
 
 async def send_message(message, user_message, is_private):
@@ -72,7 +73,7 @@ def run_discord_bot():
             await send_message(message, user_message, is_private=False)
 
         if isinstance(message.channel, discord.DMChannel) and not message.author.bot:
-            file_path = "C:/Users/Computer/Desktop/Discord bot/private_messages.txt"
+            file_path = "C:/Users/Computer/Desktop/Projects/Discord bot"
             current_time = datetime.datetime.now().strftime(
                 "%Y-%m-%d %H:%M:%S"
             )  # Format the current time
