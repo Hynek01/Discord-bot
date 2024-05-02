@@ -5,5 +5,5 @@
 [![GitHub forks](https://img.shields.io/github/forks/YourUsername/YourDiscordBot)](https://github.com/YourUsername/YourDiscordBot/network)
 [![GitHub issues](https://img.shields.io/github/issues/YourUsername/YourDiscordBot)](https://github.com/YourUsername/YourDiscordBot/issues)
 
-A fantastic Discord bot built with Python.
+A legendary Discord bot built with Python.
 
