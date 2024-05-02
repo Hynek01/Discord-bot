@@ -72,21 +72,4 @@ def run_discord_bot():
         else:
             await send_message(message, user_message, is_private=False)
 
-        if isinstance(message.channel, discord.DMChannel) and not message.author.bot:
-            file_path = "C:/Users/Computer/Desktop/Projects/Discord bot"
-            current_time = datetime.datetime.now().strftime(
-                "%Y-%m-%d %H:%M:%S"
-            )  # Format the current time
-            with open(file_path, "a") as file:
-                file.write(
-                    f"{current_time} - {message.author.name} ({message.author.id}): {message.content}\n"
-                )
-            subprocess.Popen(
-                [
-                    "cmd.exe",
-                    "/c",
-                    f"echo {current_time} - {message.author.name} ({message.author.id}): {message.content}",
-                ]
-            )
-
     client.run(TOKEN)
